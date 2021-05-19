@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    run: kkpod
-  name: kkpod
+    run: devkkpod
+  name: devkkpod
 spec:
   ports:
   - port: 8500
     protocol: TCP
     targetPort: 80
   selector:
-    run: kkpod
+    run: devkkpod
   type: NodePort
