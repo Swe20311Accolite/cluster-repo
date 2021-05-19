@@ -12,6 +12,10 @@ kubectl apply -f kksvc.yaml'''
 
       }
     }
-
+   stage('devstage') {
+        steps {
+            echo 'hello this only belongs to dev branch'
+        }
+    }
   }
 }
