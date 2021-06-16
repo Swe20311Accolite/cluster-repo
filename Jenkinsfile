@@ -8,9 +8,10 @@ pipeline {
 kubectl get pods
 kubectl apply -f kkpod.yaml
 kubectl apply -f kksvc.yaml
-echo ${GIT_BRANCH}'''
+'''
         }
 
+        sh 'echo ${GIT_BRANCH}'
       }
     }
 
